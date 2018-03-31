@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { NavigationComponent } from './navigation/navigation.component';
 import { MaterialModule } from './material.module';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-    imports: [MaterialModule],
+    imports: [MaterialModule, CommonModule, RouterModule],
     exports: [
         MaterialModule,
-        NavigationComponent
+        CommonModule,
+        NavigationComponent,
+        RouterModule
     ],
     declarations: [
         NavigationComponent

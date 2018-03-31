@@ -1,17 +1,15 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav mode="side" opened>
     <mat-nav-list>
-      <mat-list-item>
-        <button mat-icon-button>
-          <mat-icon color="primary">favorite</mat-icon>
-        </button>
+      <mat-list-item routerLink='/createtask'>
+        <mat-icon aria-hidden="true" color="primary">alarm</mat-icon>
       </mat-list-item>
-      <mat-list-item>
-        <button mat-icon-button>
-          <mat-icon color="primary" aria-hidden="true">favorite</mat-icon>
-        </button>
+      <mat-list-item routerLink='/dashboard'>
+        <mat-icon aria-hidden="true" color="primary">list</mat-icon>
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>Main content</mat-sidenav-content>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>
