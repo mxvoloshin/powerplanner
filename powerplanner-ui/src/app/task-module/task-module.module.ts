@@ -6,6 +6,8 @@ import { TaskCreationComponent } from './task-creation/task-creation.component';
   imports: [
     CommonModule
   ],
-  declarations: [TaskCreationComponent]
+  declarations: [,
+    TaskCreationComponent
+]
 })
-export class TaskCreationModule { }
+export class TaskModuleModule { }
